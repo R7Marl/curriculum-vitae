@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.perfil {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.perfil .img-perfil{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.perfil .img-perfil img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil h2 {
+  color: #fff;
+  font-size:  1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.perfil h2 span{
+  display: block;
+  font-size: 0.8em;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.contacto {
+  padding-top: 40px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+} 
+
+.contacto ul {
+  position: relative;
+}
+.contacto ul li {
+  position: relative;
+  list-style: none;
+}
+.contacto ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contacto ul li .text {
+  display: inline-block;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.contacto.education {
+  padding-top: 40px;
+}
+.contacto.education .años {
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contacto.lenguaje .porcentaje{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
+}
+.contacto.lenguaje .porcentaje div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+.contacto.lenguaje .porcentaje div:hover {
+  background: #EC327E;
+}
+.container  .izquierda {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+
+.container .derecha {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+.about {
+  margin-bottom: 50px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2  {
+  color: #003147;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+p{
+  color: #333;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.8em;
+}
+
+.about.skills {
+  margin-bottom: 50px;
+}
+.about.skills:last-child {
+  margin-bottom: 0;
+}
+.about.skills ul li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.about.skills ul li .icon {
+  display: inline-block;
+  width: 50px;
+  font-size: 18px;
+  color: #EC327E;
+}
+.about.skills ul li .text {
+  display: inline-block;
+  margin-left: 10px;
+  color: #333;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.about.skills ul li .porcentaje {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: inline-block;
+  margin-top: 5px;
+}
+.about.skills ul  li .porcentaje div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #EC327E;
+}
+.about.skills ul  li .porcentaje div:hover{
+  background: #03a9f4;
+}
+
+.about.skills ul  li .porcentaje div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.about.experiencia ul {
+  position: relative;
+
+}
+.about.experiencia ul li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.about.experiencia ul li .icon {
+  display: inline-block;
+  width: 50px;
+  font-size: 18px;
+  color: #EC327E;
+}
+
+.about.experiencia ul li button {
+ display: inline-block;
+  margin-left: 10px;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 300;
+  background: #6356FC;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+}
+.about.experiencia ul li button:hover {
+  background: #03a9f4;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal h4 {
+  color: #003147;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.modal ul li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.modal p {
+  color: lightblue;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.8em;
+}
